@@ -1,0 +1,132 @@
+.container {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+.text1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    animation-name: text;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(.7, -.9, .6, 0);
+}
+
+.text2 {
+    color: cadetblue;
+    font-size: 30px;
+}
+
+.MyPhoto {
+    margin-top: 55px;
+    border-radius: 50%;
+    max-width: 100%;
+    width: 200px;
+}
+
+.MyPhoto {
+    position: relative;
+    animation-name: Appearance;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(.7, -.9, .6, 0);
+}
+
+@-webkit-keyframes Appearance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes Appearance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes Appearance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes Appearance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes text {
+    0% {
+        opacity: 0;
+        letter-spacing: 5px;
+    }
+    30% {
+        opacity: 0.5;
+        letter-spacing: 15px;
+    }
+    85% {
+        opacity: 1;
+        letter-spacing: 8px;
+    }
+}
+
+ @media all and (max-width:767px) {
+    .text1 {
+        font-size: 40px;
+        letter-spacing: 4px;
+    }
+    @keyframes text {
+        0% {
+            opacity: 0;
+            letter-spacing: 3px;
+        }
+        30% {
+            opacity: 0.5;
+            letter-spacing: 5px;
+        }
+        85% {
+            opacity: 1;
+            letter-spacing: 3px;
+        }
+    }
+}
+ 
+
+@media all and (max-width:380px) {
+    .text1 {
+        font-size: 27px;
+        letter-spacing: 3px;
+    }
+    @keyframes text {
+        0% {
+            opacity: 0;
+            letter-spacing: 1px;
+        }
+        30% {
+            opacity: 0.5;
+            letter-spacing: 1px;
+        }
+        85% {
+            opacity: 1;
+            letter-spacing: 2px;
+        }
+    }
+}

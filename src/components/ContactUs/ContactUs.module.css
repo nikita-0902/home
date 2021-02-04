@@ -1,0 +1,69 @@
+.allfile {
+    animation: text 3s 1;
+}
+
+.title {
+    color: #feb386;
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.second__title {
+    margin-top: 20px;
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
+}
+
+.email, .phone {
+    color: rgb(151, 151, 151);
+    text-align: center;
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+.social__media {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.social__media>a {
+    margin-right: 15px;
+}
+
+@-o-keyframes text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media all and (max-width:380px) {
+    .title{
+        font-size: 30px;
+    }
+    .second__title{
+        font-size: 25px;
+    }
+}

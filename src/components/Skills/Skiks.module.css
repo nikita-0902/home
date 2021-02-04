@@ -1,0 +1,118 @@
+html{
+    overflow: hidden;
+}
+.main {
+    text-align: center;
+    color: aliceblue;
+}
+
+.exp {
+    font-size: 30px;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: text 3s 1;
+}
+
+.add {
+    margin-top: 40px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: text 3s 1;
+}
+
+div>.text {
+    color: #feb386;
+    margin-right: 1px;
+}
+
+.exx {
+    color: blueviolet;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.title {
+    color: blueviolet;
+    font-size: 40px;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.ww {
+    font-size: 25px;
+    color: rgb(218, 213, 213);
+}
+
+.box {
+    vertical-align: middle;
+}
+
+@-o-keyframes text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media all and (max-width:570px) {
+    .title {
+        font-size: 30px;
+    }
+    .exx {
+        max-width: 100%;
+        font-size: 25px;
+    }
+    .ww {
+        font-size: 16px;
+    }
+    .add {
+        max-width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media all and (max-width:380px) {
+    .title {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .exp{
+        margin-top: 5px;
+    }
+    .exx {
+        margin-top: 5px;
+        max-width: 100%;
+        font-size: 18px;
+    }
+    .ww {
+        font-size: 15px;
+    }
+    .add {
+        max-width: 100%;
+        font-size: 15px;
+    }
+}

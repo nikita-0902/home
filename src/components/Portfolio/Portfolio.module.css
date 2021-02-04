@@ -1,0 +1,146 @@
+.main__text {
+    color: #fff;
+}
+
+.title__text {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: blueviolet;
+}
+
+.text__ {
+    font-size: 30px;
+    text-align: center;
+    color: gray;
+}
+
+.app__name {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #feb386;
+}
+
+.app__file {
+    margin: 0 auto;
+    color: aliceblue;
+    font-size: 30px;
+    animation: text 3s 1;
+}
+
+.btn_ {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.todo__text {
+    text-align: center;
+    max-width: 100%;
+    word-wrap: break-word;
+    color: #fff;
+}
+
+.todo {
+    color: #feb386;
+}
+
+.icon__desc {
+    color: rgb(218, 213, 213);
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.boxx {
+    vertical-align: middle;
+}
+
+form {
+    margin-top: 20px;
+}
+
+@-o-keyframes text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media all and (max-width:767px) {
+    .title__text{
+        margin-top: 30px;
+    }
+    .todo__text {
+        font-size: 22px;
+    }
+    .icon__desc {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width:570px) {
+    .title__text{
+        margin-top: 25px;
+        font-size: 30px;
+    }
+    .todo__text{
+        font-size: 18px;
+    }
+    .text__{
+        font-size: 22px;
+    }
+    .app__name{
+        font-size: 20px;
+    }
+    .icon__desc {
+       display: none;
+    }
+
+}
+
+@media all and (max-width:320px) {
+    .text__{
+        display: none;
+    }
+    .title__text{
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    .todo__text{
+        font-size: 18px;
+    }
+    .text__{
+        font-size: 20px;
+    }
+    .app__name{
+        font-size: 18px;
+    }
+    .icon__desc {
+        display: none;
+    }
+    .btn_{
+        margin-top: 10px;
+    }
+}

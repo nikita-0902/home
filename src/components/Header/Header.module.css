@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 50px;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.menu.active {
+    transform: translateX(0);
+}
+
+.menu__content {
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.menu__header {
+    margin-top: 40px;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu__header a {
+    text-decoration: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+
+.box {
+    vertical-align: middle;
+}
+
+.menu__header a, .menu__header a:visited {
+    color: #fff;
+}
+
+.menu__header a.current, .menu__header a:hover {
+    color: #feb386;
+}
+
+.menu__header a:before, .menu__header a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: 25px;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: #feb386;
+    transition: .8s;
+}
+
+.menu__header a:hover:before, .menu__header .current:before {
+    left: 0;
+}
+
+.menu__header a:hover:after, .menu__header .current:after {
+    right: 0;
+}
